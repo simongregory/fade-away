@@ -21,10 +21,8 @@
     "url": "https://github.com/simongregory/fade-away/issues"
   },
   "homepage": "https://github.com/simongregory/fade-away#readme",
-  "dependencies": {
-    "ava": "^0.19.1"
-  },
   "devDependencies": {
+    "ava": "^0.19.1",
     "xo": "^0.18.1",
     "eslint-config-xo-sg": "^0.1.0"
   },
