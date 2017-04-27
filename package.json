@@ -1,0 +1,34 @@
+{
+  "name": "fade-away",
+  "version": "0.1.0",
+  "description": "Simple backoff strategies",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simongregory/fade-away.git"
+  },
+  "keywords": [
+    "backoff",
+    "exponential",
+    "fibonacci"
+  ],
+  "author": "Simon Gregory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simongregory/fade-away/issues"
+  },
+  "homepage": "https://github.com/simongregory/fade-away#readme",
+  "dependencies": {
+    "ava": "^0.19.1"
+  },
+  "devDependencies": {
+    "xo": "^0.18.1",
+    "eslint-config-xo-sg": "^0.1.0"
+  },
+  "xo": {
+    "extends": "eslint-config-xo-sg"
+  }
+}
