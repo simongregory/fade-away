@@ -2,6 +2,9 @@
   "name": "fade-away",
   "version": "0.2.1",
   "description": "Simple backoff strategies",
+  "engines": {
+    "node": ">=6.5.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "xo && ava"

@@ -1,5 +1,7 @@
 # fade-away
 
+[![Build Status](https://travis-ci.org/simongregory/fade-away.svg?branch=master)](https://travis-ci.org/simongregory/fade-away)
+
 Simple backoff strategies.
 
 ## Install
