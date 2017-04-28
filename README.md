@@ -1,6 +1,8 @@
 # fade-away
 
-[![Build Status](https://travis-ci.org/simongregory/fade-away.svg?branch=master)](https://travis-ci.org/simongregory/fade-away)
+[![Unix Build Status](https://travis-ci.org/simongregory/fade-away.svg?branch=master)](https://travis-ci.org/simongregory/fade-away)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/simongregory/fade-away?branch=master&svg=true)](https://ci.appveyor.com/project/SimonGregory/fade-away)
+
 
 Simple backoff strategies.
 
