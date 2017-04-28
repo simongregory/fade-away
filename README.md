@@ -8,12 +8,14 @@ Simple backoff strategies.
 
     yarn add fade-away
     
-## Useage
+## Usage
 
-    > const fade = require('fade-away');
+    const { exponential, fibonacci } = require('fade-away');
+    const ten = [0,1,2,3,4,5,6,7,8,9];
     
-    > [0,1,2,3,4,5,6,7,8,9].map(fade.exponential);
-      [ 0, 2, 8, 24, 64, 160, 384, 896, 2048, 4608 ]
+    ten.map(v => { return exponential(v)});    // [ 1000, 2000, 4000, 8000, 16000, 32000, 64000, 128000, 256000, 512000 ]
+    ten.map(v => { return exponential(v, 1)}); // [ 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 ]
+      
+    ten.map(v => { return fibonacci(v)});     // [ 1000, 1000, 2000, 3000, 5000, 8000, 13000, 21000, 34000, 55000 ]
+    ten.map(v => { return fibonacci(v, 1)});  // [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
     
-    > [0,1,2,3,4,5,6,7,8,9].map(fade.fibonacci);
-      [ 0, 1, 4, 9, 20, 40, 78, 147, 272, 495 ]
