@@ -26,8 +26,8 @@
   "homepage": "https://github.com/simongregory/fade-away#readme",
   "devDependencies": {
     "ava": "^0.19.1",
-    "xo": "^0.18.1",
-    "eslint-config-xo-sg": "^0.1.0"
+    "eslint-config-xo-sg": "^0.1.0",
+    "xo": "^0.18.2"
   },
   "xo": {
     "extends": "eslint-config-xo-sg"
