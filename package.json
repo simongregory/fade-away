@@ -31,5 +31,8 @@
   },
   "xo": {
     "extends": "eslint-config-xo-sg"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
