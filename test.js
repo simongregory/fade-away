@@ -1,5 +1,5 @@
 import test from 'ava';
-import backoff from './index';
+import backoff from '.';
 
 test('exponential', t => {
   t.is(backoff.exponential(0, 10), 10);
@@ -14,11 +14,11 @@ test('exponential', t => {
 });
 
 test('exponential using floats', t => {
-  t.is(backoff.exponential(4.0, 10), 160);
+  t.is(backoff.exponential(4, 10), 160);
   t.is(backoff.exponential(4.1, 10), 171);
   t.is(backoff.exponential(4.5, 10), 226);
   t.is(backoff.exponential(4.9, 10), 298);
-  t.is(backoff.exponential(5.0, 10), 320);
+  t.is(backoff.exponential(5, 10), 320);
 });
 
 test('exponential with negative integers', t => {
@@ -60,10 +60,10 @@ test('fibonacci', t => {
 });
 
 test('fibonacci using floats', t => {
-  t.is(backoff.fibonacci(4.0, 10), 50);
+  t.is(backoff.fibonacci(4, 10), 50);
   t.is(backoff.fibonacci(4.1, 10), 80);
   t.is(backoff.fibonacci(4.9, 10), 80);
-  t.is(backoff.fibonacci(5.0, 10), 80);
+  t.is(backoff.fibonacci(5, 10), 80);
 });
 
 test('fibonacci has a default delay of 1000', t => {

@@ -25,12 +25,15 @@
   },
   "homepage": "https://github.com/simongregory/fade-away#readme",
   "devDependencies": {
-    "ava": "^0.19.1",
-    "eslint-config-xo-sg": "^0.1.0",
-    "xo": "^0.18.2"
+    "ava": "^2.4.0",
+    "eslint-config-xo-sg": "^0.2.0",
+    "xo": "^0.25.3"
   },
   "xo": {
-    "extends": "eslint-config-xo-sg"
+    "extends": "eslint-config-xo-sg",
+    "rules": {
+      "unicorn/prefer-exponentiation-operator": "off"
+    }
   },
   "files": [
     "index.js"
